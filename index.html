@@ -12,6 +12,7 @@
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
     <script src="static/js/gesture-handler.js"></script>
     <script src="static/js/gesture-tracker.js"></script>
+    <script src="static/js/marker-listener.js"></script>
   </head>
 
   <body>
@@ -54,6 +55,7 @@
       <a-marker
         preset="custom"
         type="pattern"
+        emitevents="true"
         url="https://raw.githubusercontent.com/mia-ktlk/ARboretum/main/markers/pattern-plant.patt">
         <a-entity gltf-model="#bowser"></a-entity>
       </a-marker>
