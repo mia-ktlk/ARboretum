@@ -41,6 +41,7 @@
           src="https://raw.githubusercontent.com/mia-ktlk/ARboretum/main/models/test_plant.glb"
         >
         </a-asset-item>
+        <a-asset-item id="test_spike" src="https://raw.githubusercontent.com/mia-ktlk/ARboretum/main/models/spike3.glb"></a-asset-item>
       </a-assets>
 
       <a-marker
@@ -62,10 +63,11 @@
       </a-marker>
 
       <a-marker
+        id="markerPattern"
         type="pattern"
         emitevents="true"
-        url="https://raw.githubusercontent.com/mia-ktlk/ARboretum/main/markers/pattern-plant.patt">
-        <a-entity gltf-model="#bowser"></a-entity>
+        url="https://raw.githubusercontent.com/mia-ktlk/ARboretum/main/markers/pattern-planadsfjhhkjt.patt">
+        <a-entity gltf-model="#test_spike"></a-entity>
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
