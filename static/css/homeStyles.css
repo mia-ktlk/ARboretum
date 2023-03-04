@@ -64,6 +64,10 @@
   --bs-body-bg: #fff;
 }
 
+.bg-gray {
+  background-color: var(--bs-gray-200);
+}
+
 *,
 *::before,
 *::after {
