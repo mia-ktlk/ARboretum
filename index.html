@@ -16,13 +16,14 @@
 
   <body>
     <a-scene
-      arjs='debugUIEnabled: true'
+      arjs
       embedded
       renderer="logarithmicDepthBuffer: true;"
       vr-mode-ui="enabled: false"
       gesture-detector
       id="scene"
     >
+
         <!-- test asset: Bowser to be replaced -->
       <a-assets>
         <a-asset-item
@@ -33,8 +34,7 @@
       </a-assets>
 
       <a-marker
-        type="pattern"
-        patternUrl="https://raw.githubusercontent.com/mia-ktlk/ARboretum/main/markers/pattern-plant.patt"
+        preset="hiro"
         raycaster="objects: .clickable"
         emitevents="true"
         cursor="fuse: false; rayOrigin: mouse;"
@@ -51,67 +51,6 @@
         </a-entity>
       </a-marker>
       <a-entity camera></a-entity>
-      <a-assets>
-        <a-asset-item
-          id="spike"
-          src="https://raw.githubusercontent.com/mia-ktlk/ARboretum/main/models/spike3.glb">
-        </a-asset-item>
-      </a-assets>
-
-      <a-marker
-        type="pattern"
-        patternUrl="https://raw.githubusercontent.com/mia-ktlk/ARboretum/main/markers/pattern-protein.patt"
-        raycaster="objects: .clickable"
-        emitevents="true"
-        cursor="fuse: false; rayOrigin: mouse;"
-        id="markerB"
-      >
-        <a-entity
-          id="spike-model"
-          gltf-model="#spike"
-          position="0 0 0"
-          scale="0.05 0.05 0.05"
-          class="clickable"
-          gesture-handler
-        >
-        </a-entity>
-      </a-marker>
-
-
-
-
-      <a-assets>
-        <a-asset-item
-          id="spike2"
-          src="https://raw.githubusercontent.com/mia-ktlk/ARboretum/main/models/spike3.glb">
-        </a-asset-item>
-      </a-assets>
-
-      <a-marker
-        preset="hiro"
-        raycaster="objects: .clickable"
-        emitevents="true"
-        cursor="fuse: false; rayOrigin: mouse;"
-        id="markerC"
-      >
-        <a-entity
-          id="spike-model2"
-          gltf-model="#spike2"
-          position="0 0 0"
-          scale="0.05 0.05 0.05"
-          class="clickable"
-          gesture-handler
-        >
-        </a-entity>
-      </a-marker>
-
-
-
-
-
-
-
-
     </a-scene>
   </body>
 </html>
