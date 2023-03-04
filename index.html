@@ -16,7 +16,6 @@
       AFRAME.registerComponent('markerhandler', {
         init: function () {
           this.el.sceneEl.addEventListener('markerFound', () => {
-            // redirect to custom URL e.g. google.com
             console.log("found marker");
           })
         }
@@ -31,6 +30,7 @@
       renderer="logarithmicDepthBuffer: true;"
       vr-mode-ui="enabled: false"
       gesture-detector
+      markerhandler
       id="scene"
     >
 
