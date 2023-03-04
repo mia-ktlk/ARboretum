@@ -53,5 +53,42 @@
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
+
+    <b-scene
+    arjs
+    embedded
+    renderer="logarithmicDepthBuffer: true;"
+    vr-mode-ui="enabled: false"
+    gesture-detector
+    id="scene"
+  >
+
+    <b-assets>
+      <b-asset-item
+        id="spike"
+        src="https://raw.githubusercontent.com/mia-ktlk/ARboretum/main/models/spike3.glb">
+      </b-asset-item>
+    </b-assets>
+
+    <b-marker
+      type="'pattern"
+      patternUrl="/markers/pattern-protein.patt"
+      raycaster="objects: .clickable"
+      emitevents="true"
+      cursor="fuse: false; rayOrigin: mouse;"
+      id="markerB"
+    >
+      <b-entity
+        id="spike-model"
+        gltf-model="#bowser"
+        position="0 0 0"
+        scale="0.05 0.05 0.05"
+        class="clickable"
+        gesture-handler
+      >
+      </b-entity>
+    </b-marker>
+    <b-entity camera></b-entity>
+  </b-scene>
   </body>
 </html>
