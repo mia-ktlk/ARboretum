@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>The Gene Gnomes HATCH 2023</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="static/css/styles.css">
+
+     <!-- adapted from fcor - https://github.com/fcor/arjs-gestures -->
+    <script src="static/js/aframe.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    <script src="static/js/gesture-handler.js"></script>
+    <script src="static/js/gesture-tracker.js"></script>
+    <script>
+      AFRAME.registerComponent('markerhandler', {
+        init: function () {
+          this.el.sceneEl.addEventListener('markerFound', () => {
+            console.log("found marker");
+          })
+        }
+      });
+    </script>
+  </head>
+
+  <body>
+    <a-scene
+      arjs
+      embedded
+      renderer="logarithmicDepthBuffer: true;"
+      vr-mode-ui="enabled: false"
+      gesture-detector
+      markerhandler
+      id="scene"
+    >
+
+        <!-- test asset: Bowser to be replaced -->
+      <a-assets>
+        <!-- Dahlia Assets -->
+        <a-asset-item id="bowser" src="https://raw.githubusercontent.com/mia-ktlk/ARboretum/main/models/test_plant.glb"></a-asset-item>
+
+
+
+        <!-- Peanut Assets -->
+        <a-asset-item id="test_spike" src="https://raw.githubusercontent.com/mia-ktlk/ARboretum/main/models/spike3.glb"></a-asset-item>
+        <a-asset-item id="aflatoxin" src="https://raw.githubusercontent.com/mia-ktlk/ARboretum/main/models/aflatoxin.glb"></a-asset-item>
+        <a-asset-item id="arginine" src="https://raw.githubusercontent.com/mia-ktlk/ARboretum/main/models/arginine.glb"></a-asset-item>
+      </a-assets>
+
+      <!-- test marker:default values -->
+      <a-marker
+        preset="hiro"
+        raycaster="objects: .clickable"
+        emitevents="true"
+        cursor="fuse: false; rayOrigin: mouse;"
+        id="markerA"
+      >
+        <a-entity
+          id="bowser-model"
+          gltf-model="#bowser"
+          position="0 0 0"
+          scale="0.05 0.05 0.05"
+          class="clickable"
+          gesture-handler
+        >
+        </a-entity>
+      </a-marker>
+
+      <a-marker
+        id="markerPattern"
+        type="pattern"
+        raycaster="objects: .clickable"
+        emitevents="true"
+        cursor="fuse: false; rayOrigin: mouse;"
+        url="https://raw.githubusercontent.com/mia-ktlk/ARboretum/main/markers/pattern-plant-new.patt">
+          <a-entity gltf-model=
+          "#bowser"
+          position="0 0 0"
+          scale="0.05 0.05 0.05"
+          class="clickable"
+          gesture-handler
+          >  
+          </a-entity>
+      </a-marker>
+
+      <a-marker
+      id="virusPattern"
+      type="pattern"
+      raycaster="objects: .clickable"
+      emitevents="true"
+      cursor="fuse: false; rayOrigin: mouse;"
+      url="https://raw.githubusercontent.com/mia-ktlk/ARboretum/main/markers/pattern-virus.patt">
+        <a-entity gltf-model=
+        "#aflatoxin"
+        position="0 0 0"
+        scale="0.05 0.05 0.05"
+        class="clickable"
+        gesture-handler>  
+        </a-entity>
+    </a-marker>
+
+
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
