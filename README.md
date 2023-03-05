@@ -75,7 +75,7 @@ Because greenhouses, parks, and other related learning centers are open to all a
 For the younger visitors (or those overwhelmed by the greeness of thier plants) there is the beginner track. These lessons will feature a quick introduction to either the plant featured in the lesson or a well known topic associated with it. For example our beginner peanut exhibit shows what the inside of a peanut looks like with the various components labeled to help facilitate learning.
 
 #### Intermediate
-The intermediate track is the goldilocks, the materials featured likely either are about things you've never heard of OR go further into depth than you may have been aware. 
+The intermediate track is the goldilocks of the bunch (aka indecisive), the materials featured likely either are about things you've never heard of OR go further into depth than you may have been aware. 
 
 #### Expert
 This one is for the nerds (*yes you!*). If you thought you couldn't get enough of plants, this topic may change your mind. Learning materials will be indepth and require a background in biology, chemistry, or both.
