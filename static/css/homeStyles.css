@@ -64,6 +64,10 @@
   --bs-body-bg: #fff;
 }
 
+img.img-fluid.intro-img {
+  max-height: 60vh;
+}
+
 .bg-gray {
   background-color: var(--bs-gray-200);
 }
