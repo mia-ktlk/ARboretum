@@ -6,6 +6,15 @@
     // 
 // Scripts
 // 
+document.getElementById('yourAudio').addEventListener("mouseup", tapOrClick, false);
+document.getElementById('yourAudio').addEventListener("touchend", tapOrClick, false);
+
+function tapOrClick(e) {
+    var mp3 = e.target;
+        mp3.parentNode.getElementsByTagName('audio')[0].play();
+}
+
+
 
 window.addEventListener('DOMContentLoaded', event => {
 
