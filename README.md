@@ -10,7 +10,7 @@ Do you own a phone, tablet, laptop, or literally any other device with camera an
 
 If you answered yes, then congrats! You're one step closer to experiecing the beauty of virtual plant life and learning.
 
-If you answered no, then, sorry pal, clearly plants are the wrong green thing to focus on your life. 
+If you answered no, then, sorry pal, clearly plants are the wrong green thing to focus on in your life. 
 
 ## Passed the de-vibe check
 
