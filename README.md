@@ -2,7 +2,9 @@ Do you hate reading? .....clearly not beacuse you scrolled down to a README, ner
 
 But lets assume you do, then boy howdy do we have the product for you!
 
-Picture this, you stop at the hot new botanical garden in town, when all of a sudden you're visually assaulted by rows and rows of informational plaques. How are you supposed to mellow out and enjoy nature when the man made signs blocking the view expect to be read. It's a ~~not so~~ scientific fact that the chemicals your brain emits while reading anything longer than a paragraph permanently decreases your ability to experience happiness. Well we say no more of that, with the ARboretum project we've found a way to perfectly encapuslate the joy of learning without melting your brain. Through an engaging mix of AR, audio, and ***LIGHT*** readings, you'll be able to learn more about plants than any person should ever need to know while still feeling as fresh as a daisy. 
+Picture this, you stop at the hot new botanical garden in town, when all of a sudden you're visually assaulted by rows and rows of informational plaques. How are you supposed to mellow out and enjoy nature when the man-made signs blocking the view all expect to be read. Furthermore, it's a ~~not so~~ scientific fact that the chemicals your brain emits while reading anything longer than a paragraph permanently decreases your ability to experience happiness, joy, and pleasure of any kind. I can personally attest to this, 6th grade I read an entire page of Adam of the Road and haven't been happy since.
+
+Well we say no more of that, with the ARboretum project we've found a way to perfectly encapuslate the joy of learning without melting your brain. Through an engaging mix of AR, audio, and ***LIGHT*** readings, you'll be able to learn more about plants than any person should ever need to know while still feeling as fresh as a daisy. 
 
 # How to use it
 
@@ -33,8 +35,6 @@ By pressing that button, you will be teleported to another dimension within your
 
 
 ### How ~~tough~~ smart are ya
-
-
 
 For the younger visitors and those overwhelmed by the greeness of thier plants there is the beginner track. These lessons will feature a quick introduction to the plant featured in the lesson
 
