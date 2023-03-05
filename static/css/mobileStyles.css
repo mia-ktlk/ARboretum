@@ -472,6 +472,8 @@ output {
 
 iframe {
   border: 0;
+  height: 90vh; /* Viewport-relative units */
+  width: 80vw;
 }
 
 summary {
