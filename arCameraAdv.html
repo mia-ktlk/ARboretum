@@ -38,7 +38,7 @@
       <a-assets>
 
          <!-- Bowser -->
-         <a-asset-item id="bowser" src="https://raw.githubusercontent.com/mia-ktlk/ARboretum/main/models/cool_plant.glb"></a-asset-item>
+         <a-asset-item id="cool" src="https://raw.githubusercontent.com/mia-ktlk/ARboretum/main/models/cool_plant.glb"></a-asset-item>
 
         <!-- Dahlia Assets -->
         <a-asset-item id="dahlia" src="https://raw.githubusercontent.com/mia-ktlk/ARboretum/main/models/mosaic.glb"></a-asset-item>
@@ -49,15 +49,16 @@
 
       <!-- test marker:default values -->
       <a-marker
-        preset="hiro"
+        id="bowserPattern"
+        type="pattern"
         raycaster="objects: .clickable"
         emitevents="true"
         cursor="fuse: false; rayOrigin: mouse;"
-        id="markerA"
+        url="https://raw.githubusercontent.com/mia-ktlk/ARboretum/main/markers/pattern-virus.patt"
       >
         <a-entity
-          id="bowser-model"
-          gltf-model="#bowser"
+          id="cool-model"
+          gltf-model="#cool"
           position="0 0 0"
           scale="0.05 0.05 0.05"
           class="clickable"
