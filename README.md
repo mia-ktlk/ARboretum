@@ -62,7 +62,7 @@ By pressing that button, you will be teleported to another dimension within your
 
 Finally your hard work pays off. Once scanned, depending on your earlier selections and the pattern scanned, a wonderous 3D model will emerge that you'll be able to fully rotate, resize, and regain your love for learning with.
 
-
+![varus](/assets/img/example_ar.png)
 
 
 ### How ~~tough~~ smart are ya
