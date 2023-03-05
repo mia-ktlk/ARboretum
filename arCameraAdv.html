@@ -34,17 +34,17 @@
       id="scene"
     >
 
-        <!-- test asset: Bowser to be replaced -->
+       
       <a-assets>
+
+         <!-- Bowser -->
+         <a-asset-item id="bowser" src="https://raw.githubusercontent.com/mia-ktlk/ARboretum/main/models/cool_plant.glb"></a-asset-item>
+
         <!-- Dahlia Assets -->
-        <a-asset-item id="bowser" src="https://raw.githubusercontent.com/mia-ktlk/ARboretum/main/models/test_plant.glb"></a-asset-item>
-
-
+        <a-asset-item id="dahlia" src="https://raw.githubusercontent.com/mia-ktlk/ARboretum/main/models/mosaic.glb"></a-asset-item>
 
         <!-- Peanut Assets -->
-        <a-asset-item id="test_spike" src="https://raw.githubusercontent.com/mia-ktlk/ARboretum/main/models/spike3.glb"></a-asset-item>
-        <a-asset-item id="aflatoxin" src="https://raw.githubusercontent.com/mia-ktlk/ARboretum/main/models/aflatoxin.glb"></a-asset-item>
-        <a-asset-item id="arginine" src="https://raw.githubusercontent.com/mia-ktlk/ARboretum/main/models/arginine.glb"></a-asset-item>
+        <a-asset-item id="peanut" src="https://raw.githubusercontent.com/mia-ktlk/ARboretum/main/models/aflatoxin.glb"></a-asset-item>
       </a-assets>
 
       <!-- test marker:default values -->
@@ -67,14 +67,14 @@
       </a-marker>
 
       <a-marker
-        id="markerPattern"
+        id="peanutPattern"
         type="pattern"
         raycaster="objects: .clickable"
         emitevents="true"
         cursor="fuse: false; rayOrigin: mouse;"
-        url="https://raw.githubusercontent.com/mia-ktlk/ARboretum/main/markers/pattern-plant-new.patt">
+        url="https://raw.githubusercontent.com/mia-ktlk/ARboretum/main/markers/pattern-peanut.patt">
           <a-entity gltf-model=
-          "#bowser"
+          "#peanut"
           position="0 0 0"
           scale="0.05 0.05 0.05"
           class="clickable"
@@ -84,12 +84,12 @@
       </a-marker>
 
       <a-marker
-      id="virusPattern"
+      id="dahliaPattern"
       type="pattern"
       raycaster="objects: .clickable"
       emitevents="true"
       cursor="fuse: false; rayOrigin: mouse;"
-      url="https://raw.githubusercontent.com/mia-ktlk/ARboretum/main/markers/pattern-virus.patt">
+      url="https://raw.githubusercontent.com/mia-ktlk/ARboretum/main/markers/pattern-plant-new.patt">
         <a-entity gltf-model=
         "#aflatoxin"
         position="0 0 0"
