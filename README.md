@@ -65,7 +65,22 @@ Finally your hard work pays off. Once scanned, depending on your earlier selecti
 ![varus](/assets/img/example_ar.png)
 
 
-### How ~~tough~~ smart are ya
+### How ~~tough~~ smart are ya (Explaing the education levels)
 
-For the younger visitors and those overwhelmed by the greeness of thier plants there is the beginner track. These lessons will feature a quick introduction to the plant featured in the lesson
+A lot of games these days have difficulty sliders. While this isn't a video game, it's on a screen so basically close enough.
+
+Because greenhouses, parks, and other related learning centers are open to all ages, the exhibits need to be engaging to all ages as well. To ensure we met this goal, every topic has 3 educational levels: Beginner, intermediate, and Advanced. 
+
+#### Beginner
+For the younger visitors (or those overwhelmed by the greeness of thier plants) there is the beginner track. These lessons will feature a quick introduction to either the plant featured in the lesson or a well known topic associated with it. For example our beginner peanut exhibit shows what the inside of a peanut looks like with the various components labeled to help facilitate learning.
+
+#### Intermediate
+The intermediate track is the goldilocks, the materials featured likely either are about things you've never heard of OR go further into depth than you may have been aware. 
+
+#### Expert
+This one is for the nerds (*yes you!*). If you thought you couldn't get enough of plants, this topic may change your mind. Learning materials will be indepth and require a background in biology, chemistry, or both.
+
+
+# Thank you
+Thanks for checking out our project, we hope you enjoy using it!
 
