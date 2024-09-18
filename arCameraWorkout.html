@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>The Gene Gnomes HATCH 2023</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="static/css/styles.css">
+
+     <!-- adapted from fcor - https://github.com/fcor/arjs-gestures -->
+    <script src="static/js/aframe.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    <script src="static/js/gesture-handler.js"></script>
+    <script src="static/js/gesture-tracker.js"></script>
+    <script>
+      AFRAME.registerComponent('markerhandler', {
+        init: function () {
+          this.el.sceneEl.addEventListener('markerFound', () => {
+            console.log("found marker");
+          })
+        }
+      });
+    </script>
+  </head>
+
+  <body>
+    <a-scene
+      arjs
+      embedded
+      renderer="logarithmicDepthBuffer: true;"
+      vr-mode-ui="enabled: false"
+      gesture-detector
+      markerhandler
+      id="scene"
+    >
+
+        <!-- Bowser -->
+      <a-assets>
+        <!-- Dahlia Assets -->
+        <a-asset-item id="squat" src="https://raw.githubusercontent.com/mia-ktlk/ARboretum/main/models/squat.gltf"></a-asset-item>
+
+        <!-- Peanut Assets -->
+        <a-asset-item id="skeleton" src="https://raw.githubusercontent.com/mia-ktlk/ARboretum/main/models/skeleton.gltf"></a-asset-item>
+      </a-assets>
+
+      <!-- test marker:default values -->
+    
+      <a-marker
+        id="squatPattern"
+        type="pattern"
+        raycaster="objects: .clickable"
+        emitevents="true"
+        cursor="fuse: false; rayOrigin: mouse;"
+        url="https://raw.githubusercontent.com/mia-ktlk/ARboretum/main/markers/pattern-squat.patt">
+          <a-entity gltf-model=
+          "#squat"
+          position="0 0 0"
+          scale="0.05 0.05 0.05"
+          class="clickable"
+          gesture-handler
+          >  
+          </a-entity>
+
+          <a-entity
+          text="value: A Squat;"
+          side="double"
+          position="0 -1 -1"
+          scale="2 2 2"
+          rotation="-30 0 0">
+        </a-entity>
+      </a-marker>
+
+      <a-marker
+      id="skeletonPattern"
+      type="pattern"
+      raycaster="objects: .clickable"
+      emitevents="true"
+      cursor="fuse: false; rayOrigin: mouse;"
+      url="https://raw.githubusercontent.com/mia-ktlk/ARboretum/main/markers/pattern-skeleton.patt">
+        <a-entity gltf-model=
+        "#skeleton"
+        position="0 0 0"
+        scale="0.05 0.05 0.05"
+        class="clickable"
+        gesture-handler>  
+        </a-entity>
+    </a-marker>
+
+
+  
+
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
